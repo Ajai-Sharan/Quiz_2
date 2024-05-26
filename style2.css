@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #CCFFFF;
+    border-bottom: 1px solid #ccc;
+}
+
+.progress-container {
+    flex-grow: 1;
+    margin-right: 20px;
+    position: relative;
+    height: 20px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+}
+
+#progress-bar {
+    height: 100%;
+    width: 0;
+    background-color: #4caf50;
+    border-radius: 5px;
+    transition: width 0.3s;
+}
+
+.score-container {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.choosingGameContainer {
+    height: calc(100vh - 50px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #CCFFFF;
+}
+
+#title {
+    font-size: 24px;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.choosingGame .GameContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.choosingGame .GameContainer .box {
+    display: flex;
+    width: 500px;
+    height: 50px;
+    background-color: white;
+    margin: 5px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.index {
+    flex-basis: 10%;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+}
+
+.content {
+    flex-basis: 90%;
+    padding-left: 20px;
+}
+
+.box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 123, 255, 0.5);
+}
+
+.box.correct {
+    background-color: #28a745;
+    color: white;
+}
+
+.box.wrong {
+    background-color: #dc3545;
+    color: white;
+}

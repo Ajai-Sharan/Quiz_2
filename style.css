@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Protest Revolution', sans-serif;
+    background-color: #CCFFFF;
+    height: 100vh;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.homePage {
+    text-align: center;
+}
+.homePage p{
+    color: aqua;
+    font-size: 50px;
+    font-weight: bolder;
+    margin-bottom: 50px;
+}
+.homePage button {
+    padding: 7px 56px;
+    border: 3px solid aqua;
+    background-color: white;
+    cursor: pointer;
+    font-size: 16px;
+    color: aqua;
+}
+
+.homePage button:hover{
+    color: white;
+    background-color: aqua;
+}
+
+
+
+
+
+
+
+
+
